@@ -1,0 +1,22 @@
+<h1>Login Page</h1>
+<div class="container">
+<div class="row">
+  <div class="col-6">
+    <label for="uname" [(ngModel)]="this.Loginobj.username">UserName</label>
+    <input type="text" name="uname">
+  </div>
+</div><br><br>
+<div class="row">
+  <div class="col-6">
+    <label for="pword" [(ngModel)]="this.Loginobj.password">Password</label>
+    <input type="password" name="pword">
+  </div>
+</div><br><br>
+<div class="row">
+  <div class="col-4">
+    <button type="submit" (click)="login()">Login</button>
+  </div>
+</div>
+</div>
+
+<h1>{{Loginobj.username}}</h1>
